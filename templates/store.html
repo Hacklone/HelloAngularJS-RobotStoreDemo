@@ -1,0 +1,18 @@
+<div>
+    <div id="panel">
+        <button class="btn btn-success" ng-click="addRobot()">+</button>
+        Search: <input class="form-control" ng-model="searchText">
+    </div>
+
+    <div ng-repeat="robot in robots | filter: searchText">
+        <robot robot="robot" ng-click="$parent.detailRobot(robot)"></robot>
+    </div>
+
+    <div opened="currentlyDetailedRobot != null" on-close="currentlyDetailedRobot = null;" dialog>
+        <div>
+            <h1>{{ currentlyDetailedRobot.name }}</h1>
+            <img ng-src="{{ currentlyDetailedRobot.image }}">
+            <textarea rows="4" cols="30" ng-model="currentlyDetailedRobot.description"></textarea>
+        </div>
+    </div>
+</div>

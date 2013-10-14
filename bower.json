@@ -1,0 +1,8 @@
+{
+  "name": "helloAngularJS",
+  "version": "1.0.0",
+  "dependencies": {
+	"angular": "1.0.7",
+	"bootstrap-css": ">=1.0.0"
+  }
+}

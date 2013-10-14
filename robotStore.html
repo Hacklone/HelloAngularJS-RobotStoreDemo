@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="robotStore">
+<head>
+    <title>Robot Store</title>
+
+    <link type="text/css" rel="stylesheet" href="includes/bootstrap-css/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="content/robotStore.css">
+
+    <script src="includes/angular/angular.min.js"></script>
+    <script src="includes/angular/angular-mocks.js"></script>
+
+    <script src="scripts/names.js"></script>
+    <script src="scripts/mainController.js"></script>
+    <script src="scripts/robotService.js"></script>
+    <script src="scripts/robot.js"></script>
+    <script src="scripts/dialog.js"></script>
+    <script src="scripts/module.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="inner">
+            <h1>Robot Store</h1>
+        </div>
+    </div>
+    <div id="main">
+        <ng-view></ng-view>
+    </div>
+</body>
+</html>
