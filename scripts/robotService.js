@@ -12,6 +12,7 @@ angular.module('robotStore.Services', [])
 
             $http.get('/robots')
                 .success(function(robotsFromServer) {
+                    self.robots.length = 0;
                     Array.prototype.push.apply(self.robots, robotsFromServer);
 
                     deferred.resolve();
